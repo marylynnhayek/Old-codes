@@ -1,0 +1,78 @@
+#legend{
+    color: deeppink;
+    font-family:cursive;
+}
+#name{
+    color: deeppink;
+}
+.top{
+    float: left;
+    
+}
+#top{
+    float: right; 
+        font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+}
+#photo{
+   border-radius: 50px;
+}
+#paragraph{
+    color: deeppink;
+    font-family:serif;
+    
+}
+#firstname{
+    
+    color:pink;
+    font-family: cursive;
+    
+}
+#lastname{color: hotpink;
+font-family: cursive}
+
+#email
+{color: hotpink;
+font-family : cursive;
+
+}
+#number{
+    color: pink;
+    font-family: cursive;
+    }
+#quantity{color: deeppink;
+    font-family: cursive
+}
+#couleur{
+    color: hotpink;
+    font-family: cursive;
+}
+#label1{
+    color: pink;
+    font-family: cursive;
+    font-size: 40px;
+}
+#label2{
+    color:purple;
+    font-family : cursive;
+    font-size: 40px;
+}
+#photo2{
+    float: right;
+}
+.middle{
+    float:;
+}
+#photo3{border-radius: 20px;}
+.informations{float: right;}
+#list{
+    float: right;
+}
+    
+#TypeOfClothing{color: deeppink;
+font-family: cursive;
+text-decoration:underline;
+
+
+}   
