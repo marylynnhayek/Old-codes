@@ -1,0 +1,99 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title>marylynn el hayek website</title>    
+<meta http-equiv="content-type"content="text/html;charset=utf-8"/>
+    <link href="style.css"type="text/css"rel="stylesheet"/>
+    <script type="text/javascript">
+  function imgselection(){
+            var divLeft = document.getElementById("photo");
+            var red = document.getElementById("red").checked;
+            var blue = document.getElementById("blue").checked;
+            var black = document.getElementById("black").checked;
+            if(red == true)
+                divLeft.innerHTML = "<img src='red.png' alt='red' id='img1'/>"; 
+            if(blue == true)
+                divLeft.innerHTML = "<img src='blue.png' alt='blue' id='img1'/>";
+            if(black == true)
+                divLeft.innerHTML = "<img src='black.png' alt='black' id='img1'/>";
+  }
+  function configurate(){
+            var text= document.getElementById("conf");
+            text = prompt("Choisir entre deux étapes:");
+            if (text=="1")
+                alert("The first step is:.... ");
+            else if (text=="2")
+                alert("The second step is:.... ");
+            else
+                alert("Please insert a correct number!");
+        }
+     function multiply(){
+            var qte = document.getElementById("textbox").value;
+            var prix = document.getElementById("price");
+            var nvprix = qte*148;
+            if (nvprix < 0)
+                alert("Saisir un nombre valable.");
+            else
+                prix.innerHTML= nvprix + "$";
+        }
+      </script>
+    </head>
+<body> 
+    <div class="top">
+    <div>
+    Contact us:+961 xxxxxx|xxx@hotmail.com
+    </div>
+    </div>
+    <div class="logoDiv">
+       <div>
+       <label class="label 1">Online</label>             <label class="label 2">shopping</label>
+       </div>
+       <div id="menu">
+    <a href="index.html">HOME</a>
+    <a href="about.html">about us</a>
+    <a href="service.html">services</a>
+    <a href="product.html">products</a>
+    <a href="contact.html">contact us</a>
+    </div>
+    </div>
+    <div id="photo">
+        <img src="red.png" height="250px" width="240px" id="img1">
+    </div>
+    <div id="text">
+            <p id="headphones">HEADPHONES</p>
+            <h1>Beats EP</h1>
+            <p>
+            The preffered choice of a vast range of acclaimed DJ's.Punchy,bass focused sound and high isolation.Sturdy headband and on-ear cushions suitable for live performance.
+            </p>
+            <br><br>
+            <hr/>
+            <p><h2>Color:</h2></p><br/>
+            <input type="radio" id="red"name="color"onlick="imgselection()"checked="checked"><label for="red">Red</label> 
+            <input type="radio"id="blue"name="color"onclick="imgselection()"><label for="red">Blue</label>
+            <input type="radio"id="black"name="color"onclick="imgselection()">
+            <label for="red">Black</label>
+            <br/><br/>        
+            <p>Cable Configuration:
+            </p>
+            <br/>
+            <select name="list">
+            <option value="1">Sraight</option>
+            <option value="2">Coiled</option>
+            <option value="3">long-coiled</option>
+            </select>
+      <br/><br/>
+    <p id="configurer"onclick="configurate()">How to configurate your headphone:</p>  
+      <hr/><br/>
+    <p id="quantity"> Quantity:</p>
+      <input type="text"id="textbox"onblur="multiply()">
+      <br/><br/><hr/><br/>
+      <label id="price">148$</label>
+      <input type="button" value="Add to cart"id="add">
+      <hr/>
+      <div class="nav_down">
+      <div>
+      &copy;Online Shopping    
+      </div>
+      </div>
+     </body>
+</html>
