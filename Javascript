@@ -1,0 +1,164 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+     <title>MARY-LYNN EXPRESS</title>
+     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+     <link href="marylynn_css.css"type="text/css"rel="stylesheet"/>
+        <script type="text/javascript">
+      function checkForm(){
+          var firstName = document.getElementById("firstName").value;
+          if(!firstName){
+              alert("PLease enter your first name!");
+              document.getElementById("firstName").focus();
+            document.getElementById("firstName").style.outline="solid red";
+              return false;
+          }
+      }
+      function enableLastName(){       
+var firstName=document.getElementById("firstName").value;
+if(firstName){
+    var lastName=document.getElementById("lastName");
+    lastName.disabled =false;
+}          
+    }
+            
+       function enter_location(chkbox){
+           var addLocation=document.getElementById("locationTxt");
+           if(chkbox.checked){
+               var result = prompt("Kindly enter your location:");
+               addLocation.innerHTML ="Your location: "+result+"<br/><br/>";
+           }
+           else{
+               addLocation.innerHTML= "";
+           }
+       } 
+      </script>
+    </head>
+    <body>
+           <div class="top">
+               <div>
+                   <label>CONTACT US:+96170/615753|marylynn.hayek3@gmail.com</label></div>  
+           </div>
+        <div class="logoDiv">
+           <div>
+               <label class ="label1" >ONLINE</label>
+               <label class ="label2" >SHOPPING</label>
+                   </div>
+            <div class="menu">
+               <a href="index.html">HOME</a>
+               <a href="about.html">ABOUT US</a>
+               <a href="service.html">SERVICES</a>
+               <a href="product.html">PRODUCTS</a>
+               <a href="contact.html">CONTACT US</a>    
+           </div>
+        <div class="middle">
+            <div>
+               <p>
+         <br>
+         <br>
+        "    ONLINE SHOPPING SERVICES    "
+             <br>
+             </p>         
+            </div>
+            </div>
+        <div class="bottom">
+            <div>
+        <label class="label1">We are an online store</label>
+                <br>
+                <br>
+                <label class="label2">The largest and most faithful online store</label>
+                <br>
+                <br>
+                <p>
+          "Find products online for the best prices"
+                    <br>
+                    <br>
+                </p>
+                <p>A list of our products:</p>
+                <ul>
+                <li>Women clothing</li>
+                <li>Men clothing</li>
+                <li>Kids clothing</li>
+                <li>Household</li>
+                <li>Electroniics</li>   
+                </ul>
+                <br>
+            </div>
+        </div> 
+            <div class="bottom_up">
+                <div>
+                    "SIGN UP"
+            <table>
+                <tbody>
+            <tr>
+                <td width="500px"></td>
+                <td>
+                    <input type="text" placeholder="First Name" id="firstName" onblur="enableLastName()" style="outline: red solid;">
+               </td>
+                <td>
+                    <input type="text"placeholder="Last Name"id="lastname"disabled>
+                </td>
+            </tr>
+           <tr height="30px">
+                    </tr>
+            <tr>
+                <td  width="500px"></td>
+                <td>
+                   <input type="text"placeholder="E-mail Id "></td>    
+            <td>
+         <input type="text" placeholder="Mobile No">
+            </td>
+         </tr>
+                    <tr height="30px"> 
+                                             </tr>
+         <tr>
+             
+           <td width="500px"> </td>  
+            <td>
+                <select>
+                    <option>--Sex--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+             </td>       
+             <td>
+        <input type="text" placeholder="appointment date">
+                    </td>
+                </tr>
+               <tr height="30px">    
+                                      </tr>     
+                <tr>
+                    <td width="500px"></td>
+                <td colspan="2">
+               <textarea placeholder="Message"></textarea>
+                    </td>
+                    </tr>
+                    <tr height="30px">
+                                        </tr>
+                <tr>
+    <td width="500px">  </td>
+       <td colspan="2" style="font-size:16px">
+           <input type="checkbox" name="location" onclick="enter_location(this)">"ADD LOCATION"&nbsp;&nbsp;"
+           <br>
+           <br>
+           <label id="locationTxt"></label>
+                    </td>
+                </tr>    
+                    <tr>
+                        <td width="500px"></td>
+            <td colspan="2">
+            <button onclick="checkForm()">SUBMIT</button>    
+                        </td>
+                    </tr>
+                </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="nav_down">
+            <div>
+               online shopping
+                </div>
+            </div>
+        </div>
+    </body>
+</html>            
