@@ -1,0 +1,48 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+    <title>html2 marylynn hayek</title>
+    <link href="css/style.css"type="text/css"rel="stylesheet"/>
+    <meta http-equiv="content-type"content="text/html;charset=utf-8"/>
+    </head>
+<body>
+  <div class="top">
+    <div>
+        <label> Contact us:+961 xxxxxx|xxx@hotmail.com</label>
+    </div>
+    <div class="logoDiv">
+        <div>
+            <label class="label 1">Online</label>
+            <label class="label 2">shopping</label>
+        </div>
+       </div>
+    </div> 
+    <div class="menu">
+    <a href="index.html">HOME</a>
+    <a href="about.html">about us</a>
+    <a href="service.html">services</a>
+    <a href="product.html">products</a>
+    <a href="contact.html">contact us</a>
+    </div>
+    <table>
+    <tbody>
+        <tr>
+             <td colspan="2"></td>
+        <td width="500px"></td>
+           <tr> <td><label>First name</label><input type="text" placeholder="First name*" id="first name"></td></tr>
+      
+        <tr> <td><label>phone number</label><input type="text" placeholder="phone number" id="phone number"></td></tr>
+            <br>
+           <tr> <td><label>E-mail</label><input type="text" placeholder="Email" id="email"></td>
+            <tr><td><label>Comments*:</label><textarea rows="2" cols="2" ></textarea></td></tr>
+       <hr>
+        <br>
+        <br>
+<tr><td><p>*.required fields</p>
+            <button value="submit">submit</button></td></tr>
+        
+            
+       </tbody>
+    </table>
+    </body>
+</html>
