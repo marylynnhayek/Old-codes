@@ -1,0 +1,137 @@
+<html>
+<head>
+	<title> Online Shopping </title>
+	
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+		function checkForm(){
+			var firstName = document.getElementById("firstName").value;
+			if(!firstName){
+				alert("Please enter a first name!");
+				document.getElementById("firstName").focus();
+				document.getElementById("firstName").style.outline = "solid red";
+				return false;
+			}
+		}
+		
+		function enableLastName(){
+			var firstName = document.getElementById("firstName").value;
+			if(firstName){
+				var lastName = document.getElementById("lastName");
+				lastName.disabled = false;
+			}
+		}
+		
+		function enter_location(chkbox){
+			var addLocation = document.getElementById("locationTxt");
+			if(chkbox.checked){
+				var result = prompt("Kindly enter your location:");			
+				addLocation.innerHTML = "Your location: "+result+"<br/><br/>";
+			}
+			else{
+				addLocation.innerHTML = "";
+			}
+		}
+		
+	</script>
+</head>
+<body>
+	
+	<div class="top">
+		<div>
+		 Contact Us +961 xxxxxx | xxx@hotmail.com 
+		</div>
+	</div>
+	
+	<div class="logoDiv">
+		<div>
+			<label class="label1">Online </label><label class="label2">Shopping</label>
+		</div>
+		<div class="menu">
+			<a href="index.html">HOME</a> 
+			<a href="about.html">ABOUT US</a>  
+			<a href="service.html">SERVICES</a>
+			<a href="product.html">PRODUCTS</a> 
+			<a href="contact.html">CONTACT US</a>
+		</div>
+	</div>
+	
+	<div class="middle">
+		<div>
+		<p>
+			<br> <br>
+					Online Shopping Services  <br>
+		</p> 
+		</div>
+	</div>
+	
+	<div class="bottom">
+		<div>
+			<label class="label1"> We are an online store </label> <br> <br>
+			<label class="label2"> The largest and most faithful online store </label> <br> <br>
+			<p>Find products online for the best prices<br/><br/>
+			<p>A list of our products:</p>
+			<ul>
+				<li>Women Clothing</li>
+				<li>Men Clothing</li>
+				<li>Kids Clothing</li>
+				<li>Household</li>
+				<li>Electronics</li>
+			</ul>
+			<br>
+		</div>
+	</div>
+	
+	<div class="bottom_up">
+		<div>
+				Sign Up				
+				<table>									
+					<tr>
+						<td width="500px"> </td>
+						<td><input type="text" placeholder="First Name" id="firstName" onBlur="enableLastName()">
+						<td><input type="text" placeholder="Last Name" id="lastName" disabled>
+					</tr>
+					<tr height="30px">						
+					</tr>
+					<tr>
+						<td width="500px"> </td>
+						<td><input type="text" placeholder="Email Id">
+						<td><input type="text" placeholder="Mobile No">
+					</tr>
+					<tr height="30px">
+					</tr>
+					<tr>
+						<td width="500px"> </td>
+						<td><select> <option> -- Sex -- </option> <option> Male </option> <option> Female </option> </select>
+						<td><input type="text" placeholder="appointment date">
+					</tr>			
+					<tr height="30px">					
+					</tr>
+					<tr>
+						<td width="500px"> </td>
+						<td colspan="2"><textarea placeholder="Message"> </textarea>
+					</tr>
+					<tr height="30px">					
+					</tr>
+					<tr>
+					<td width="500px"> </td>
+					<td colspan="2" style="font-size:16px">
+					<input type="checkbox" name="location" onclick="enter_location(this)"/>Add location&nbsp;&nbsp;<br/><br/>
+					<label id="locationTxt"></label>
+					</td>
+					</tr>
+					<tr>
+						<td width="500px"> </td>
+						<td colspan="2"><button onClick="checkForm()"> SUBMIT </button>
+					</tr>
+				</table>
+				
+		</div>
+	</div>
+		
+	<div class="nav_down">
+		<div>
+		 &copy; Online Shopping 
+		</div>
+	</div>
+	
